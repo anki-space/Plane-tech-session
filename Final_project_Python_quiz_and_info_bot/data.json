@@ -1,0 +1,1035 @@
+{
+  "answer_mode": [
+    {
+      "question": "hi",
+      "answer": "Hello! I'm your Python chatbot."
+    },
+    {
+      "question": "Who created Python?",
+      "answer": "Python was created by Guido van Rossum in 1989 and released in 1991."
+    },
+    {
+      "question": "When was Python first released?",
+      "answer": "Python was first released in 1991."
+    },
+    {
+      "question": "Why was Python created?",
+      "answer": "Python was created by Guido van Rossum as a successor to the ABC programming language, focusing on simplicity, readability, and ease of use."
+    },
+    {
+      "question": "What are some key features of Python?",
+      "answer": "Python is known for its simplicity, readability, portability, extensive libraries, dynamic typing, and strong community support."
+    },
+    {
+      "question": "What are the main uses of Python?",
+      "answer": "Python is used in web development, data science, machine learning, artificial intelligence, automation, cybersecurity, and game development."
+    },
+    {
+      "question": "Why is Python popular?",
+      "answer": "Python is popular due to its ease of learning, vast libraries, and versatility across different fields like data science, AI, and web development."
+    },
+    {
+      "question": "What type of programming language is Python?",
+      "answer": "Python is a high-level, interpreted, dynamically-typed, and general-purpose programming language."
+    },
+    {
+      "question": "What is the latest stable version of Python?",
+      "answer": "The latest stable version of Python can be found on the official website: https://www.python.org/downloads/"
+    },
+    {
+      "question": "Is Python open-source?",
+      "answer": "Yes, Python is an open-source language maintained by the Python Software Foundation."
+    },
+    {
+      "question": "What are Python's major implementations?",
+      "answer": "Python has several implementations, including CPython (official), PyPy (JIT compiler), Jython (for Java), and IronPython (for .NET)."
+    },
+    {
+      "question": "What is PEP 8?",
+      "answer": "PEP 8 is the official style guide for writing Python code, promoting readability and consistency."
+    },
+    {
+      "question": "How is Python different from other programming languages?",
+      "answer": "Python emphasizes readability, has simple syntax, supports multiple programming paradigms, and comes with extensive libraries for various applications."
+    },
+    {
+      "question": "What is the Python Software Foundation (PSF)?",
+      "answer": "The Python Software Foundation (PSF) is a non-profit organization that manages the development and promotion of Python."
+    },
+    {
+      "question": "What are Python's core principles?",
+      "answer": "Python follows the 'Zen of Python' principles, including readability, simplicity, explicit over implicit, and the idea that 'There should be one— and preferably only one —obvious way to do it.'"
+    },
+    {
+      "question": "What is the Zen of Python?",
+      "answer": "The Zen of Python is a set of guidelines that define Python's design philosophy. It can be accessed by running `import this` in a Python shell."
+    },
+
+    {
+      "question": "What are data structures in Python?",
+      "answer": "Data structures in Python are used to store and organize data efficiently. Examples include lists, tuples, dictionaries, sets, and more."
+    },
+    {
+      "question": "What is a list in Python?",
+      "answer": "A list is a mutable, ordered collection in Python that can store elements of different data types. It is defined using square brackets []."
+    },
+    {
+      "question": "What is a tuple in Python?",
+      "answer": "A tuple is an immutable, ordered collection in Python that stores multiple elements. It is defined using parentheses ()."
+    },
+    {
+      "question": "What is the difference between a list and a tuple?",
+      "answer": "Lists are mutable (can be changed), whereas tuples are immutable (cannot be changed). Lists use square brackets [], and tuples use parentheses ()."
+    },
+    {
+      "question": "What is a dictionary in Python?",
+      "answer": "A dictionary is an unordered collection of key-value pairs in Python, defined using curly braces {}."
+    },
+    {
+      "question": "What is a set in Python?",
+      "answer": "A set is an unordered collection of unique elements in Python, defined using curly braces {}."
+    },
+    {
+      "question": "What is a stack in Python?",
+      "answer": "A stack is a data structure that follows the Last In, First Out (LIFO) principle. It can be implemented using lists or the deque module from collections."
+    },
+    {
+      "question": "What is a queue in Python?",
+      "answer": "A queue is a data structure that follows the First In, First Out (FIFO) principle. It can be implemented using lists, deque, or the queue module."
+    },
+    {
+      "question": "What is a linked list?",
+      "answer": "A linked list is a linear data structure where elements (nodes) are connected using pointers. Each node contains data and a reference to the next node."
+    },
+    {
+      "question": "What are the types of linked lists?",
+      "answer": "There are three types of linked lists: Singly Linked List, Doubly Linked List, and Circular Linked List."
+    },
+    {
+      "question": "What is a binary tree?",
+      "answer": "A binary tree is a hierarchical data structure where each node has at most two children, called the left and right child."
+    },
+    {
+      "question": "What is a graph in Python?",
+      "answer": "A graph is a data structure consisting of nodes (vertices) and edges that connect them. It can be represented using adjacency lists or matrices."
+    },
+    {
+      "question": "What are data types in Python?",
+      "answer": "Data types in Python define the kind of value a variable can hold, such as integers, floats, strings, and more."
+    },
+    {
+      "question": "What are the built-in data types in Python?",
+      "answer": "Python has several built-in data types, including Numeric (int, float, complex), Sequence (list, tuple, range), Text (str), Set (set, frozenset), Mapping (dict), Boolean (bool), and Binary (bytes, bytearray, memoryview)."
+    },
+    {
+      "question": "What is the difference between int and float in Python?",
+      "answer": "An int (integer) represents whole numbers, while a float (floating-point number) represents numbers with decimals."
+    },
+    {
+      "question": "What is a string in Python?",
+      "answer": "A string (str) is a sequence of characters enclosed in single, double, or triple quotes."
+    },
+    {
+      "question": "What is the difference between list and tuple?",
+      "answer": "Lists are mutable (can be changed) and defined using square brackets []. Tuples are immutable (cannot be changed) and defined using parentheses ()."
+    },
+    {
+      "question": "What is a dictionary in Python?",
+      "answer": "A dictionary (dict) is a collection of key-value pairs, defined using curly braces {}."
+    },
+    {
+      "question": "What is the difference between a set and a frozenset?",
+      "answer": "A set is an unordered collection of unique elements that is mutable, whereas a frozenset is immutable."
+    },
+    {
+      "question": "What is a boolean in Python?",
+      "answer": "A boolean (bool) represents one of two values: True or False."
+    },
+    {
+      "question": "What are binary data types in Python?",
+      "answer": "Binary data types in Python include bytes, bytearray, and memoryview, which are used for handling binary data."
+    },
+    {
+      "question": "What is the None type in Python?",
+      "answer": "None is a special type in Python that represents the absence of a value or a null value."
+    },
+     {
+       "question": "What is Python?",
+       "answer": "Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used for web development, data analysis, artificial intelligence, and more."
+     },
+     {
+       "question": "How do I install Python?",
+       "answer": "You can install Python by downloading the installer from the official Python website (https://www.python.org) and following the installation instructions for your operating system."
+     },
+     {
+       "question": "What is a variable in Python?",
+       "answer": "A variable in Python is a named location used to store data in memory. You can assign a value to a variable using the `=` operator. Example: `x = 10`."
+     },
+     {
+       "question": "How do I declare a list in Python?",
+       "answer": "You can declare a list in Python using square brackets `[]`. Example: `my_list = [1, 2, 3, 4]`."
+     },
+     {
+       "question": "What is a function in Python?",
+       "answer": "A function in Python is a block of reusable code that performs a specific task. You can define a function using the `def` keyword. Example: `def my_function(): print('Hello, World!')`."
+     },
+     {
+       "question": "How do I reverse a string in Python?",
+       "answer": "You can reverse a string using slicing. Example: `reversed_string = my_string[::-1]`."
+     },
+     {
+       "question": "What is a lambda function?",
+       "answer": "A lambda function is a small anonymous function defined with the `lambda` keyword. Example: `square = lambda x: x * x`."
+     },
+     {
+       "question": "How do I read a file in Python?",
+       "answer": "You can read a file using the `open()` function. Example: `with open('file.txt', 'r') as file: content = file.read()`."
+     },
+     {
+       "question": "What is a dictionary in Python?",
+       "answer": "A dictionary in Python is a collection of key-value pairs. It is defined using curly braces `{}`. Example: `my_dict = {'name': 'Alice', 'age': 25}`."
+     },
+     {
+       "question": "How do I handle exceptions in Python?",
+       "answer": "You can handle exceptions using `try` and `except` blocks. Example: `try: x = 1 / 0 except ZeroDivisionError: print('Cannot divide by zero')`."
+     },
+     {
+       "question": "What is a module in Python?",
+       "answer": "A module in Python is a file containing Python code, such as functions, classes, or variables. You can import a module using the `import` statement. Example: `import math`."
+     },
+     {
+       "question": "How do I sort a list in Python?",
+       "answer": "You can sort a list using the `sort()` method or the `sorted()` function. Example: `my_list.sort()` or `sorted_list = sorted(my_list)`."
+     },
+     {
+       "question": "What is a class in Python?",
+       "answer": "A class in Python is a blueprint for creating objects. It defines attributes and methods. Example: `class MyClass: def __init__(self, name): self.name = name`."
+     },
+     {
+       "question": "How do I create a virtual environment in Python?",
+       "answer": "You can create a virtual environment using the `venv` module. Run `python -m venv myenv` in the terminal, then activate it using `source myenv/bin/activate` (Linux/Mac) or `myenv\\Scripts\\activate` (Windows)."
+     },
+     {
+       "question": "What is the difference between `==` and `is` in Python?",
+       "answer": "The `==` operator checks if two values are equal, while the `is` operator checks if two variables point to the same object in memory."
+     },
+     {
+       "question": "How do I concatenate strings in Python?",
+       "answer": "You can concatenate strings using the `+` operator. Example: `full_name = 'John' + ' ' + 'Doe'`."
+     },
+     {
+       "question": "What is a tuple in Python?",
+       "answer": "A tuple in Python is an immutable sequence of elements. It is defined using parentheses `()`. Example: `my_tuple = (1, 2, 3)`."
+     },
+     {
+       "question": "How do I remove an element from a list in Python?",
+       "answer": "You can remove an element using the `remove()` method or the `del` statement. Example: `my_list.remove('item')` or `del my_list[0]`."
+     },
+     {
+       "question": "What is list comprehension in Python?",
+       "answer": "List comprehension is a concise way to create lists. Example: `squares = [x**2 for x in range(10)]`."
+     },
+     {
+       "question": "How do I iterate over a dictionary in Python?",
+       "answer": "You can iterate over a dictionary using a `for` loop. Example: `for key, value in my_dict.items(): print(key, value)`."
+     },
+     {
+       "question": "What is the purpose of `__init__` in Python?",
+       "answer": "The `__init__` method is a constructor in Python classes. It is called when an object is created and is used to initialize attributes. Example: `def __init__(self, name): self.name = name`."
+     },
+   
+      {
+        "question": "What is the difference between a list and a tuple?",
+        "answer": "A list is mutable (can be modified), while a tuple is immutable (cannot be modified). Lists are defined with square brackets `[]`, and tuples are defined with parentheses `()`."
+      },
+      {
+        "question": "How do I check if a key exists in a dictionary?",
+        "answer": "You can check if a key exists in a dictionary using the `in` keyword. Example: `if 'key' in my_dict: print('Key exists')`."
+      },
+      {
+        "question": "What is the purpose of `self` in Python classes?",
+        "answer": "`self` refers to the instance of the class. It is used to access attributes and methods of the class within its own methods."
+      },
+      {
+        "question": "How do I convert a string to lowercase in Python?",
+        "answer": "You can convert a string to lowercase using the `lower()` method. Example: `my_string.lower()`."
+      },
+      {
+        "question": "What is the difference between `append()` and `extend()` in Python lists?",
+        "answer": "`append()` adds a single element to the end of the list, while `extend()` adds multiple elements (from an iterable) to the end of the list."
+      },
+      {
+        "question": "How do I find the length of a list?",
+        "answer": "You can find the length of a list using the `len()` function. Example: `length = len(my_list)`."
+      },
+      {
+        "question": "What is a set in Python?",
+        "answer": "A set is an unordered collection of unique elements. It is defined using curly braces `{}` or the `set()` function. Example: `my_set = {1, 2, 3}`."
+      },
+      {
+        "question": "How do I remove duplicates from a list?",
+        "answer": "You can remove duplicates by converting the list to a set and back to a list. Example: `unique_list = list(set(my_list))`."
+      },
+      {
+        "question": "What is the purpose of `if __name__ == '__main__'` in Python?",
+        "answer": "This construct ensures that certain code runs only when the script is executed directly, not when it is imported as a module."
+      },
+      {
+        "question": "How do I shuffle a list in Python?",
+        "answer": "You can shuffle a list using the `shuffle()` function from the `random` module. Example: `random.shuffle(my_list)`."
+      },
+      {
+        "question": "What is the difference between `deepcopy` and `copy` in Python?",
+        "answer": "`copy` creates a shallow copy (only references to nested objects), while `deepcopy` creates a new copy of all nested objects recursively."
+      },
+      {
+        "question": "How do I get the current working directory in Python?",
+        "answer": "You can get the current working directory using the `os` module. Example: `import os; cwd = os.getcwd()`."
+      },
+      {
+        "question": "What is the purpose of the `pass` statement in Python?",
+        "answer": "The `pass` statement is a placeholder that does nothing. It is used when a statement is required syntactically but no action is needed."
+      },
+      {
+        "question": "How do I create a generator in Python?",
+        "answer": "You can create a generator using a function with the `yield` keyword. Example: `def my_generator(): yield 1; yield 2`."
+      },
+      {
+        "question": "What is the difference between `range()` and `xrange()` in Python?",
+        "answer": "In Python 2, `range()` returns a list, while `xrange()` returns a generator. In Python 3, `xrange()` is removed, and `range()` behaves like `xrange()`."
+      },
+      {
+        "question": "How do I merge two dictionaries in Python?",
+        "answer": "You can merge two dictionaries using the `update()` method or the `**` operator. Example: `merged_dict = {**dict1, **dict2}`."
+      },
+      {
+        "question": "What is the purpose of the `__str__` method in Python?",
+        "answer": "The `__str__` method defines the string representation of an object. It is called by the `str()` function and the `print()` function."
+      },
+      {
+        "question": "How do I check if a string contains a substring?",
+        "answer": "You can check if a string contains a substring using the `in` keyword. Example: `if 'substring' in my_string: print('Found')`."
+      },
+      {
+        "question": "What is the difference between `isinstance()` and `type()` in Python?",
+        "answer": "`isinstance()` checks if an object is an instance of a class or a subclass, while `type()` returns the exact type of the object."
+      },
+      {
+        "question": "How do I convert a list to a string?",
+        "answer": "You can convert a list to a string using the `join()` method. Example: `my_string = ''.join(my_list)`."
+      },
+      {
+        "question": "What is the purpose of the `with` statement in Python?",
+        "answer": "The `with` statement is used for resource management. It ensures that resources (like files) are properly closed after use."
+      },
+      {
+        "question": "How do I count the occurrences of an element in a list?",
+        "answer": "You can count occurrences using the `count()` method. Example: `count = my_list.count('element')`."
+      },
+      {
+        "question": "What is the difference between `break` and `continue` in Python?",
+        "answer": "`break` exits the loop entirely, while `continue` skips the rest of the current iteration and moves to the next iteration."
+      },
+      {
+        "question": "How do I create a package in Python?",
+        "answer": "A package is created by placing an `__init__.py` file in a directory. The directory name becomes the package name."
+      },
+      {
+        "question": "What is the purpose of the `enumerate()` function in Python?",
+        "answer": "The `enumerate()` function adds a counter to an iterable. Example: `for index, value in enumerate(my_list): print(index, value)`."
+      },
+      {
+        "question": "How do I reverse a dictionary in Python?",
+        "answer": "You can reverse a dictionary by swapping keys and values. Example: `reversed_dict = {v: k for k, v in my_dict.items()}`."
+      },
+      {
+        "question": "What is the difference between `__init__` and `__new__` in Python?",
+        "answer": "`__new__` is responsible for creating a new instance, while `__init__` is responsible for initializing the instance."
+      },
+      {
+        "question": "How do I find the index of an element in a list?",
+        "answer": "You can find the index using the `index()` method. Example: `index = my_list.index('element')`."
+      },
+      {
+        "question": "What is the purpose of the `super()` function in Python?",
+        "answer": "The `super()` function is used to call a method from a parent class in inheritance."
+      },
+      {
+        "question": "How do I create a thread in Python?",
+        "answer": "You can create a thread using the `threading` module. Example: `import threading; thread = threading.Thread(target=my_function)`."
+      },
+      {
+        "question": "What is the difference between `pickle` and `json` in Python?",
+        "answer": "`pickle` is used for serializing Python objects, while `json` is used for serializing data to a human-readable format."
+      },
+      {
+        "question": "How do I check if a file exists in Python?",
+        "answer": "You can check if a file exists using the `os.path.exists()` function. Example: `import os; if os.path.exists('file.txt'): print('File exists')`."
+      },
+      {
+        "question": "What is the purpose of the `__slots__` attribute in Python?",
+        "answer": "The `__slots__` attribute is used to explicitly declare data members in a class, which can save memory and improve performance."
+      },
+      {
+        "question": "How do I convert a string to an integer in Python?",
+        "answer": "You can convert a string to an integer using the `int()` function. Example: `my_int = int('123')`."
+      },
+      {
+        "question": "What is the difference between `__getattr__` and `__getattribute__` in Python?",
+        "answer": "`__getattr__` is called when an attribute is not found, while `__getattribute__` is called for every attribute access."
+      },
+      {
+        "question": "How do I create a decorator in Python?",
+        "answer": "A decorator is a function that takes another function and extends its behavior. Example: `def my_decorator(func): def wrapper(): print('Before'); func(); print('After'); return wrapper`."
+      },
+      {
+        "question": "What is the purpose of the `__call__` method in Python?",
+        "answer": "The `__call__` method allows an instance of a class to be called as a function."
+      },
+      {
+        "question": "How do I find the maximum value in a list?",
+        "answer": "You can find the maximum value using the `max()` function. Example: `max_value = max(my_list)`."
+      },
+      {
+        "question": "What is the difference between `args` and `kwargs` in Python?",
+        "answer": "`args` is used to pass a variable number of positional arguments, while `kwargs` is used to pass a variable number of keyword arguments."
+      },
+      {
+        "question": "How do I create a context manager in Python?",
+        "answer": "You can create a context manager using the `__enter__` and `__exit__` methods or the `contextlib` module."
+      },
+      {
+        "question": "What is the purpose of the `__import__` function in Python?",
+        "answer": "The `__import__` function is used to dynamically import modules at runtime."
+      },
+      {
+        "question": "How do I find the minimum value in a list?",
+        "answer": "You can find the minimum value using the `min()` function. Example: `min_value = min(my_list)`."
+      },
+      {
+        "question": "What is the difference between `__eq__` and `__hash__` in Python?",
+        "answer": "`__eq__` defines equality between objects, while `__hash__` defines the hash value used in hash-based collections like sets and dictionaries."
+      },
+      {
+        "question": "How do I create a custom exception in Python?",
+        "answer": "You can create a custom exception by defining a class that inherits from `Exception`. Example: `class MyError(Exception): pass`."
+      },
+      {
+        "question": "What is the purpose of the `__del__` method in Python?",
+        "answer": "The `__del__` method is called when an object is about to be destroyed. It is used for cleanup operations."
+      },
+      {
+        "question": "How do I find the sum of all elements in a list?",
+        "answer": "You can find the sum using the `sum()` function. Example: `total = sum(my_list)`."
+      },
+  
+     {
+       "question": "What is the difference between a list and a tuple?",
+       "answer": "A list is mutable (can be modified), while a tuple is immutable (cannot be modified). Lists are defined with square brackets `[]`, and tuples are defined with parentheses `()`."
+     },
+     {
+       "question": "How do I check if a key exists in a dictionary?",
+       "answer": "You can check if a key exists in a dictionary using the `in` keyword. Example: `if 'key' in my_dict: print('Key exists')`."
+     },
+     {
+       "question": "What is the purpose of `self` in Python classes?",
+       "answer": "`self` refers to the instance of the class. It is used to access attributes and methods of the class within its own methods."
+     },
+     {
+       "question": "How do I convert a string to lowercase in Python?",
+       "answer": "You can convert a string to lowercase using the `lower()` method. Example: `my_string.lower()`."
+     },
+     {
+       "question": "What is the difference between `append()` and `extend()` in Python lists?",
+       "answer": "`append()` adds a single element to the end of the list, while `extend()` adds multiple elements (from an iterable) to the end of the list."
+     },
+     {
+       "question": "How do I find the length of a list?",
+       "answer": "You can find the length of a list using the `len()` function. Example: `length = len(my_list)`."
+     },
+     {
+       "question": "What is a set in Python?",
+       "answer": "A set is an unordered collection of unique elements. It is defined using curly braces `{}` or the `set()` function. Example: `my_set = {1, 2, 3}`."
+     },
+     {
+       "question": "How do I remove duplicates from a list?",
+       "answer": "You can remove duplicates by converting the list to a set and back to a list. Example: `unique_list = list(set(my_list))`."
+     },
+     {
+       "question": "What is the purpose of `if __name__ == '__main__'` in Python?",
+       "answer": "This construct ensures that certain code runs only when the script is executed directly, not when it is imported as a module."
+     },
+     {
+       "question": "How do I shuffle a list in Python?",
+       "answer": "You can shuffle a list using the `shuffle()` function from the `random` module. Example: `random.shuffle(my_list)`."
+     },
+     {
+       "question": "What is the difference between `deepcopy` and `copy` in Python?",
+       "answer": "`copy` creates a shallow copy (only references to nested objects), while `deepcopy` creates a new copy of all nested objects recursively."
+     },
+     {
+       "question": "How do I get the current working directory in Python?",
+       "answer": "You can get the current working directory using the `os` module. Example: `import os; cwd = os.getcwd()`."
+     },
+     {
+       "question": "What is the purpose of the `pass` statement in Python?",
+       "answer": "The `pass` statement is a placeholder that does nothing. It is used when a statement is required syntactically but no action is needed."
+     },
+     {
+       "question": "How do I create a generator in Python?",
+       "answer": "You can create a generator using a function with the `yield` keyword. Example: `def my_generator(): yield 1; yield 2`."
+     },
+     {
+       "question": "What is the difference between `range()` and `xrange()` in Python?",
+       "answer": "In Python 2, `range()` returns a list, while `xrange()` returns a generator. In Python 3, `xrange()` is removed, and `range()` behaves like `xrange()`."
+     },
+     {
+       "question": "How do I merge two dictionaries in Python?",
+       "answer": "You can merge two dictionaries using the `update()` method or the `**` operator. Example: `merged_dict = {**dict1, **dict2}`."
+     },
+     {
+       "question": "What is the purpose of the `__str__` method in Python?",
+       "answer": "The `__str__` method defines the string representation of an object. It is called by the `str()` function and the `print()` function."
+     },
+     {
+       "question": "How do I check if a string contains a substring?",
+       "answer": "You can check if a string contains a substring using the `in` keyword. Example: `if 'substring' in my_string: print('Found')`."
+     },
+     {
+       "question": "What is the difference between `isinstance()` and `type()` in Python?",
+       "answer": "`isinstance()` checks if an object is an instance of a class or a subclass, while `type()` returns the exact type of the object."
+     },
+     {
+       "question": "How do I convert a list to a string?",
+       "answer": "You can convert a list to a string using the `join()` method. Example: `my_string = ''.join(my_list)`."
+     },
+     {
+       "question": "What is the purpose of the `with` statement in Python?",
+       "answer": "The `with` statement is used for resource management. It ensures that resources (like files) are properly closed after use."
+     },
+     {
+       "question": "How do I count the occurrences of an element in a list?",
+       "answer": "You can count occurrences using the `count()` method. Example: `count = my_list.count('element')`."
+     },
+     {
+       "question": "What is the difference between `break` and `continue` in Python?",
+       "answer": "`break` exits the loop entirely, while `continue` skips the rest of the current iteration and moves to the next iteration."
+     },
+     {
+       "question": "How do I create a package in Python?",
+       "answer": "A package is created by placing an `__init__.py` file in a directory. The directory name becomes the package name."
+     },
+     {
+       "question": "What is the purpose of the `enumerate()` function in Python?",
+       "answer": "The `enumerate()` function adds a counter to an iterable. Example: `for index, value in enumerate(my_list): print(index, value)`."
+     },
+     {
+       "question": "How do I reverse a dictionary in Python?",
+       "answer": "You can reverse a dictionary by swapping keys and values. Example: `reversed_dict = {v: k for k, v in my_dict.items()}`."
+     },
+     {
+       "question": "What is the difference between `__init__` and `__new__` in Python?",
+       "answer": "`__new__` is responsible for creating a new instance, while `__init__` is responsible for initializing the instance."
+     },
+     {
+       "question": "How do I find the index of an element in a list?",
+       "answer": "You can find the index using the `index()` method. Example: `index = my_list.index('element')`."
+     },
+     {
+       "question": "What is the purpose of the `super()` function in Python?",
+       "answer": "The `super()` function is used to call a method from a parent class in inheritance."
+     },
+     {
+       "question": "How do I create a thread in Python?",
+       "answer": "You can create a thread using the `threading` module. Example: `import threading; thread = threading.Thread(target=my_function)`."
+     },
+     {
+       "question": "What is the difference between `pickle` and `json` in Python?",
+       "answer": "`pickle` is used for serializing Python objects, while `json` is used for serializing data to a human-readable format."
+     },
+     {
+       "question": "How do I check if a file exists in Python?",
+       "answer": "You can check if a file exists using the `os.path.exists()` function. Example: `import os; if os.path.exists('file.txt'): print('File exists')`."
+     },
+     {
+       "question": "What is the purpose of the `__slots__` attribute in Python?",
+       "answer": "The `__slots__` attribute is used to explicitly declare data members in a class, which can save memory and improve performance."
+     },
+     {
+       "question": "How do I convert a string to an integer in Python?",
+       "answer": "You can convert a string to an integer using the `int()` function. Example: `my_int = int('123')`."
+     },
+     {
+       "question": "What is the difference between `__getattr__` and `__getattribute__` in Python?",
+       "answer": "`__getattr__` is called when an attribute is not found, while `__getattribute__` is called for every attribute access."
+     },
+     {
+       "question": "How do I create a decorator in Python?",
+       "answer": "A decorator is a function that takes another function and extends its behavior. Example: `def my_decorator(func): def wrapper(): print('Before'); func(); print('After'); return wrapper`."
+     },
+     {
+       "question": "What is the purpose of the `__call__` method in Python?",
+       "answer": "The `__call__` method allows an instance of a class to be called as a function."
+     },
+     {
+       "question": "How do I find the maximum value in a list?",
+       "answer": "You can find the maximum value using the `max()` function. Example: `max_value = max(my_list)`."
+     },
+     {
+       "question": "What is the difference between `args` and `kwargs` in Python?",
+       "answer": "`args` is used to pass a variable number of positional arguments, while `kwargs` is used to pass a variable number of keyword arguments."
+     },
+     {
+       "question": "How do I create a context manager in Python?",
+       "answer": "You can create a context manager using the `__enter__` and `__exit__` methods or the `contextlib` module."
+     },
+     {
+       "question": "What is the purpose of the `__import__` function in Python?",
+       "answer": "The `__import__` function is used to dynamically import modules at runtime."
+     },
+     {
+       "question": "How do I find the minimum value in a list?",
+       "answer": "You can find the minimum value using the `min()` function. Example: `min_value = min(my_list)`."
+     },
+     {
+       "question": "What is the difference between `__eq__` and `__hash__` in Python?",
+       "answer": "`__eq__` defines equality between objects, while `__hash__` defines the hash value used in hash-based collections like sets and dictionaries."
+     },
+     {
+       "question": "How do I create a custom exception in Python?",
+       "answer": "You can create a custom exception by defining a class that inherits from `Exception`. Example: `class MyError(Exception): pass`."
+     },
+     {
+       "question": "What is the purpose of the `__del__` method in Python?",
+       "answer": "The `__del__` method is called when an object is about to be destroyed. It is used for cleanup operations."
+     },
+     {
+       "question": "How do I find the sum of all elements in a list?",
+       "answer": "You can find the sum using the `sum()` function. Example: `total = sum(my_list)`."
+     },
+     
+          {
+              "question": "What is a variable in Python?",
+              "answer": "A variable in Python is used to store data in memory."
+          },
+          {
+              "question": "What is a function in Python?",
+              "answer": "A function in Python is used to perform a specific task."
+          },
+          {
+              "question": "What is a list in Python?",
+              "answer": "A list in Python is used to store multiple items in a single variable."
+          },
+          {
+              "question": "What is a dictionary in Python?",
+              "answer": "A dictionary in Python is used to store key-value pairs."
+          },
+          {
+              "question": "How do I define a variable in Python?",
+              "answer": "You can define a variable using the `def` keyword. Example: `def x = 10(): pass`."
+          },
+          {
+              "question": "How do I define a function in Python?",
+              "answer": "You can define a function using the `def` keyword. Example: `def my_function(): pass`."
+          },
+          {
+              "question": "How do I define a list in Python?",
+              "answer": "You can define a list using the `def` keyword. Example: `def my_list = [1, 2, 3](): pass`."
+          },
+          {
+              "question": "How do I define a dictionary in Python?",
+              "answer": "You can define a dictionary using the `def` keyword. Example: `def my_dict = {'key': 'value'}(): pass`."
+          },
+          {
+            "question": "What is Object-Oriented Programming (OOP)?",
+            "answer": "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which contain data (attributes) and methods (functions) that operate on the data."
+          },
+          {
+            "question": "What are the four main principles of OOP?",
+            "answer": "The four main principles of OOP are Encapsulation, Abstraction, Inheritance, and Polymorphism."
+          },
+          {
+            "question": "What is a class in Python?",
+            "answer": "A class in Python is a blueprint for creating objects. It defines attributes and methods that describe the behavior of the objects."
+          },
+          {
+            "question": "How do you define a class in Python?",
+            "answer": "You can define a class using the 'class' keyword. Example:\n```python\nclass Car:\n    def __init__(self, brand):\n        self.brand = brand\n```"
+          },
+          {
+            "question": "What is an object in Python?",
+            "answer": "An object is an instance of a class. It contains data and methods defined by the class."
+          },
+          {
+            "question": "What is the difference between a class and an object?",
+            "answer": "A class is a template for creating objects, while an object is an instance of a class with specific values for attributes."
+          },
+          {
+            "question": "What is encapsulation in Python?",
+            "answer": "Encapsulation is the process of restricting direct access to certain data by using private and protected attributes."
+          },
+          {
+            "question": "How do you implement encapsulation in Python?",
+            "answer": "Encapsulation is implemented using private attributes (`__attribute`) and protected attributes (`_attribute`)."
+          },
+          {
+            "question": "What is abstraction in Python?",
+            "answer": "Abstraction is the process of hiding implementation details and exposing only the essential features of an object."
+          },
+          {
+            "question": "How do you achieve abstraction in Python?",
+            "answer": "Abstraction is achieved using abstract classes and methods in the `abc` module. Example:\n```python\nfrom abc import ABC, abstractmethod\nclass Animal(ABC):\n    @abstractmethod\n    def make_sound(self):\n        pass\n```"
+          },
+          {
+            "question": "What is inheritance in Python?",
+            "answer": "Inheritance is the process by which a class (child) derives attributes and methods from another class (parent)."
+          },
+          {
+            "question": "How do you implement inheritance in Python?",
+            "answer": "You implement inheritance by specifying the parent class in parentheses:\n```python\nclass Car:\n    def drive(self):\n        print('Driving')\n\nclass ElectricCar(Car):\n    pass\n```"
+          },
+          {
+            "question": "What are the types of inheritance in Python?",
+            "answer": "Python supports Single, Multiple, Multilevel, Hierarchical, and Hybrid inheritance."
+          },
+          {
+            "question": "What is polymorphism in Python?",
+            "answer": "Polymorphism allows objects of different classes to be treated as objects of a common base class, enabling method overriding and operator overloading."
+          },
+          {
+            "question": "What is method overriding in Python?",
+            "answer": "Method overriding occurs when a child class redefines a method from its parent class with the same name but different behavior."
+          },
+          {
+            "question": "What is method overloading in Python?",
+            "answer": "Python does not support method overloading directly, but it can be achieved using default arguments or variable-length arguments (`*args`)."
+          },
+          {
+            "question": "What is the `super()` function in Python?",
+            "answer": "The `super()` function is used to call a method from the parent class in a child class."
+          },
+          {
+            "question": "What is the difference between `self` and `cls` in Python?",
+            "answer": "`self` refers to the instance of a class, while `cls` refers to the class itself and is used in class methods."
+          },
+          {
+            "question": "How do you create a static method in Python?",
+            "answer": "A static method is defined using the `@staticmethod` decorator. Example:\n```python\nclass Math:\n    @staticmethod\n    def add(a, b):\n        return a + b\n```"
+          },
+          {
+            "question": "What is the difference between an instance method, class method, and static method?",
+            "answer": "- **Instance Method:** Operates on an instance (`self`).\n- **Class Method:** Operates on the class (`cls`).\n- **Static Method:** Does not access instance or class-specific data."
+          },
+          {
+            "question": "How do you define a class method in Python?",
+            "answer": "A class method is defined using the `@classmethod` decorator and takes `cls` as its first parameter."
+          },
+          {
+            "question": "What is a dunder method in Python?",
+            "answer": "Dunder (double underscore) methods, also called magic methods, start and end with `__`. Example: `__init__`, `__str__`, `__len__`."
+          },
+          {
+            "question": "What is the `__init__` method in Python?",
+            "answer": "`__init__` is a constructor method called when a new object is created. It initializes instance attributes."
+          },
+          {
+            "question": "What is the `__str__` method in Python?",
+            "answer": "The `__str__` method defines how an object is converted to a string when printed."
+          },
+          {
+            "question": "What is multiple inheritance?",
+            "answer": "Multiple inheritance is when a class inherits from more than one parent class."
+          },
+          {
+            "question": "What is the MRO (Method Resolution Order) in Python?",
+            "answer": "MRO defines the order in which methods are inherited in case of multiple inheritance. It follows the C3 linearization algorithm."
+          },
+          {
+            "question": "How do you check the method resolution order (MRO) of a class?",
+            "answer": "You can check MRO using `ClassName.mro()` or `ClassName.__mro__`."
+          },
+          {
+            "question": "What is the difference between a shallow copy and a deep copy?",
+            "answer": "- **Shallow Copy:** Copies references to objects.\n- **Deep Copy:** Recursively copies all objects, creating independent copies."
+          },
+          {
+            "question": "How do you create a deep copy in Python?",
+            "answer": "You can create a deep copy using the `copy` module:\n```python\nimport copy\ndeep_copied_obj = copy.deepcopy(original_obj)\n```"
+          },
+          {
+            "question": "What is the difference between `is` and `==` in Python?",
+            "answer": "- `is` checks if two variables reference the same object.\n- `==` checks if two variables have the same value."
+          }
+      ],
+
+
+
+"quiz_mode": [
+    {
+      "question": "How do you create a list in Python?",
+      "correct_answer": "my_list = [1, 2, 3]",
+      "options": [
+        "my_list = [1, 2, 3]",
+        "my_list = {1, 2, 3}",
+        "my_list = (1, 2, 3)",
+        "my_list = <1, 2, 3>"
+      ]
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "correct_answer": "def",
+      "options": ["def", "func", "lambda", "define"]
+    },
+    {
+      "question": "What will `print(type([]))` output?",
+      "correct_answer": "<class 'list'>",
+      "options": ["<class 'list'>", "<class 'tuple'>", "<class 'dict'>", "<class 'set'>"]
+    },
+    {
+      "question": "Which of the following is NOT a valid variable name in Python?",
+      "correct_answer": "2variable",
+      "options": ["my_variable", "VariableName", "var_1", "2variable"]
+    },
+    {
+      "question": "Which function is used to get the length of a list in Python?",
+      "correct_answer": "len()",
+      "options": ["size()", "length()", "count()", "len()"]
+    },
+    {
+      "question": "What is the correct syntax to open a file named `file.txt` in read mode?",
+      "correct_answer": "open('file.txt', 'r')",
+      "options": [
+        "open('file.txt', 'r')",
+        "open_file('file.txt')",
+        "open('file.txt')",
+        "file.open('file.txt', 'r')"
+      ]
+    },
+    {
+      "question": "Which of the following data types is **immutable**?",
+      "correct_answer": "Tuple",
+      "options": ["List", "Dictionary", "Tuple", "Set"]
+    },
+    {
+      "question": "How do you create an empty set in Python?",
+      "correct_answer": "set()",
+      "options": ["{}", "[]", "set()", "emptyset()"]
+    },
+    {
+      "question": "What will `bool('False')` return?",
+      "correct_answer": "True",
+      "options": ["True", "False", "None", "Error"]
+    },
+    {
+      "question": "Which of the following is NOT a valid way to declare a dictionary?",
+      "correct_answer": "my_dict = [1: 'one', 2: 'two']",
+      "options": [
+        "my_dict = {1: 'one', 2: 'two'}",
+        "my_dict = dict({1: 'one', 2: 'two'})",
+        "my_dict = [1: 'one', 2: 'two']",
+        "my_dict = dict([(1, 'one'), (2, 'two')])"
+      ]
+    },
+    {
+      "question": "Which of the following is used to remove an element from a set?",
+      "correct_answer": "discard()",
+      "options": ["delete()", "remove()", "discard()", "pop()"]
+    },
+    {
+      "question": "How do you check the type of a variable in Python?",
+      "correct_answer": "type(var)",
+      "options": ["typeof(var)", "type(var)", "var.type()", "checktype(var)"]
+    },
+    {
+      "question": "What will be the output of `bool([])`?",
+      "correct_answer": "False",
+      "options": ["True", "False", "None", "Error"]
+    },
+    {
+      "question": "Which statement is used to exit a loop in Python?",
+      "correct_answer": "break",
+      "options": ["stop", "exit", "break", "return"]
+    },
+    {
+      "question": "Which operator is used for exponentiation in Python?",
+      "correct_answer": "**",
+      "options": ["^", "**", "exp()", "//"]
+    },
+    {
+      "question": "How do you start a comment in Python?",
+      "correct_answer": "#",
+      "options": ["//", "#", "/*", "<!--"]
+    },
+    {
+      "question": "What is the output of `print(3 == 3.0)`?",
+      "correct_answer": "True",
+      "options": ["True", "False", "None", "Error"]
+    },
+    {
+      "question": "Which function is used to read a line from a file?",
+      "correct_answer": "readline()",
+      "options": ["read()", "readline()", "readlines()", "get_line()"]
+    },
+    {
+      "question": "How do you import the `math` module in Python?",
+      "correct_answer": "import math",
+      "options": ["import math", "include math", "load math", "use math"]
+    },
+
+        {
+          "question": "Which data structure uses LIFO (Last In, First Out) ordering?",
+          "correct_answer": "Stack",
+          "options": ["Queue", "Stack", "Heap", "Linked List"]
+        },
+        {
+          "question": "Which of the following data structures allows duplicate elements?",
+          "correct_answer": "List",
+          "options": ["Set", "Dictionary", "List", "Tuple"]
+        },
+        {
+          "question": "Which data structure in Python is immutable?",
+          "correct_answer": "Tuple",
+          "options": ["List", "Dictionary", "Tuple", "Set"]
+        },
+        {
+          "question": "What is the time complexity of searching for an element in an unordered list?",
+          "correct_answer": "O(n)",
+          "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"]
+        },
+        {
+          "question": "Which of the following is used to implement a queue?",
+          "correct_answer": "collections.deque",
+          "options": ["list", "set", "collections.deque", "tuple"]
+        },
+        {
+          "question": "Which method is used to add an element at the end of a list?",
+          "correct_answer": "append()",
+          "options": ["insert()", "push()", "append()", "extend()"]
+        },
+        {
+          "question": "Which method removes and returns the last element of a list?",
+          "correct_answer": "pop()",
+          "options": ["delete()", "pop()", "remove()", "discard()"]
+        },
+        {
+          "question": "Which data structure is best suited for implementing a priority queue?",
+          "correct_answer": "Heap",
+          "options": ["Stack", "Queue", "Heap", "Linked List"]
+        },
+        {
+          "question": "What will be the output of `len({'a': 1, 'b': 2, 'c': 3})`?",
+          "correct_answer": "3",
+          "options": ["2", "3", "4", "1"]
+        },
+        {
+          "question": "Which operation has O(1) complexity in a dictionary?",
+          "correct_answer": "Key lookup",
+          "options": ["Insertion", "Deletion", "Key lookup", "Traversal"]
+        },
+        {
+          "question": "Which of the following is NOT a valid way to create a set in Python?",
+          "correct_answer": "{1, 2, 3, 4}",
+          "options": [
+            "set([1, 2, 3, 4])",
+            "{1, 2, 3, 4}",
+            "set(1, 2, 3, 4)",
+            "set({1, 2, 3, 4})"
+          ]
+        },
+        {
+          "question": "Which method is used to remove all elements from a dictionary?",
+          "correct_answer": "clear()",
+          "options": ["remove()", "pop()", "clear()", "del()"]
+        },
+        {
+          "question": "What will `sorted([3, 1, 4, 1, 5, 9])` return?",
+          "correct_answer": "[1, 1, 3, 4, 5, 9]",
+          "options": [
+            "[9, 5, 4, 3, 1, 1]",
+            "[3, 1, 4, 1, 5, 9]",
+            "[1, 1, 3, 4, 5, 9]",
+            "[1, 3, 4, 5, 9]"
+          ]
+        },
+        {
+          "question": "Which data structure is best suited for implementing undo/redo operations?",
+          "correct_answer": "Stack",
+          "options": ["Queue", "Stack", "Linked List", "Dictionary"]
+        },
+        {
+          "question": "Which of the following data structures stores key-value pairs?",
+          "correct_answer": "Dictionary",
+          "options": ["List", "Tuple", "Dictionary", "Set"]
+        },
+        {
+          "question": "What happens when you try to access a key that does not exist in a dictionary?",
+          "correct_answer": "KeyError",
+          "options": ["IndexError", "KeyError", "ValueError", "None"]
+        },
+        {
+          "question": "Which of the following operations is the fastest in a set?",
+          "correct_answer": "Membership test (`in` operator)",
+          "options": ["Membership test (`in` operator)", "Adding elements", "Removing elements", "Iterating over elements"]
+        },
+        {
+          "question": "Which method is used to add multiple elements to a set?",
+          "correct_answer": "update()",
+          "options": ["append()", "add()", "update()", "extend()"]
+        },
+        {
+          "question": "Which of the following is the correct way to define an empty dictionary?",
+          "correct_answer": "{}",
+          "options": ["{}", "[]", "set()", "dict[]"]
+        },
+        {
+          "question": "Which of the following is a mutable data type?",
+          "options": ["Tuple", "List", "String", "Integer"],
+          "correct_answer": "List"
+        },
+        {
+          "question": "Which data type is used to store key-value pairs?",
+          "options": ["List", "Tuple", "Dictionary", "Set"],
+          "correct_answer": "Dictionary"
+        },
+        {
+          "question": "What is the correct data type for 3.14?",
+          "options": ["Integer", "Float", "Complex", "String"],
+          "correct_answer": "Float"
+        },
+        {
+          "question": "Which of the following data types is immutable?",
+          "options": ["List", "Set", "Dictionary", "Tuple"],
+          "correct_answer": "Tuple"
+        },
+        {
+          "question": "Which data type is used to represent True or False values?",
+          "options": ["Integer", "String", "Boolean", "Complex"],
+          "correct_answer": "Boolean"
+        },
+        {
+          "question": "Which of the following can store a sequence of characters?",
+          "options": ["List", "Tuple", "Set", "String"],
+          "correct_answer": "String"
+        },
+        {
+          "question": "What is the output of type(10)?",
+          "options": ["int", "float", "str", "bool"],
+          "correct_answer": "int"
+        },
+        {
+          "question": "Which data type allows only unique values?",
+          "options": ["List", "Tuple", "Set", "Dictionary"],
+          "correct_answer": "Set"
+        },
+        {
+          "question": "Which data type is used for handling binary data?",
+          "options": ["Boolean", "Bytes", "Set", "Integer"],
+          "correct_answer": "Bytes"
+        },
+        {
+          "question": "Which function is used to check the type of a variable?",
+          "options": ["typeof()", "isinstance()", "type()", "checktype()"],
+          "correct_answer": "type()"
+        }
+  ]
+}
