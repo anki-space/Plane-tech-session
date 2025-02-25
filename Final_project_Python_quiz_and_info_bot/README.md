@@ -32,7 +32,7 @@ Some pics of the bot
 - Answer mode
 <img width="449" alt="genaral_answer" src="https://github.com/user-attachments/assets/ca76f6d8-cdde-4820-b31b-7715cd8731a6" />
 
--Quiz mode
+- Quiz mode
 <img width="527" alt="quiz" src="https://github.com/user-attachments/assets/a18d55b7-aa17-4b15-a077-77dd0a5b6742" />
 
 
