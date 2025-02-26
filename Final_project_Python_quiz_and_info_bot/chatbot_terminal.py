@@ -42,7 +42,8 @@ def chatbot():
     mode = "answer"
     current_question = None
     correct_answer = None
-
+    score = 0
+    total_questions = 0
     while True:
         user_input = input("\nYou: ").strip().lower()
 
@@ -55,7 +56,11 @@ def chatbot():
         elif user_input == "switch":
             mode = "quiz" if mode == "answer" else "answer"
             print(f"Chatbot: Switched to {mode.capitalize()} Mode.")
+            if mode == "quiz":
+                print(f"Chatbot: Current score: {score}/{total_questions}")
 
+        elif user_input == "score":
+            print(f"Chatbot: Your current score is {score}/{total_questions}" if total_questions > 0 else "No quiz questions attempted yet.")
 
         elif mode == "answer":
             response = get_best_answer(user_input)
@@ -63,20 +68,25 @@ def chatbot():
 
         elif mode == "quiz":
             if current_question:
+                total_questions += 1
                 if user_input == correct_answer.lower():
                     print("Chatbot: ✅ Correct!")
+                    score += 1
                 else:
                     print(f"Chatbot: ❌ Wrong! The correct answer was: {correct_answer}")
+
+                # Reset question after answering
                 current_question = None
                 correct_answer = None
+                print(f"Chatbot: Your updated score is {score}/{total_questions}")
+
             else:
+                # Ask a new question
                 question_data = random.choice(quiz_mode_data)
                 current_question = question_data["question"]
                 correct_answer = question_data["correct_answer"]
                 options = "\n".join(f"- {opt}" for opt in question_data["options"])
                 print(f"Chatbot: {current_question}\nOptions:\n{options}")
-
-
 
 # Run chatbot
 if __name__ == "__main__":
