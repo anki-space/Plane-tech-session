@@ -41,6 +41,30 @@
       "answer": "Python is popular due to its ease of learning, vast libraries, and versatility across different fields like data science, AI, and web development."
     },
     {
+      "question":"How to take user input in Python?",
+      "answer":"You can take user input in Python using the `input()` function. Example: `name = input('Enter your name: ')`."
+    },
+    {
+      "question":"How to print in Python?",
+      "answer":"You can print in Python using the `print()` function. Example: `print('Hello, World!')`."
+    },
+    {
+      "question": "What is a variable in Python?",
+      "answer": "A variable in Python is a named location used to store data in memory."
+    },
+    {
+      "question": "How do I declare a list in Python?",
+      "answer": "You can declare a list in Python using square brackets `[]`. Example: `my_list = [1, 2, 3, 4]`."
+    },
+    {
+      "question": "What is a function in Python?",
+      "answer": "A function in Python is a block of reusable code that performs a specific task."
+    },
+    { 
+      "question":"What is a key in dictionary in Python?",
+      "answer":"A key in dictionary in Python is used to access the value associated with it."
+    },
+    {
       "question": "What type of programming language is Python?",
       "answer": "Python is a high-level, interpreted, dynamically-typed, and general-purpose programming language."
     },
