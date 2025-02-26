@@ -8,7 +8,7 @@ from datetime import datetime
 import time
 
 # Load dataset
-with open("Final_project_Python_quiz_and_info_bot\data.json", "r", encoding="utf-8") as file:
+with open("data.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 # Prepare Answer Mode dataset
@@ -50,7 +50,7 @@ def switch_mode():
     global mode
     mode = "quiz" if mode == "answer" else "answer"
     mode_label.config(text=f"Mode: {mode.capitalize()} Mode")
-    chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: Switched to {mode.capitalize()} Mode.\n", "bot")
+    chat_area.insert(tk.END, f"\n [Bot]: Switched to {mode.capitalize()} Mode.\n", "bot")
     chat_area.yview(tk.END)
 
 # Function to handle user input
@@ -61,27 +61,28 @@ def handle_input(event=None):  # Add event argument for Enter key support
     if not user_input:
         return
 
-    chat_area.insert(tk.END, f"\n[{get_timestamp()}] [You]: {user_input}\n", "user")
+    chat_area.insert(tk.END, f" \n[You]: {user_input}\n", "user")
     user_entry.delete(0, tk.END)
 
     if user_input.lower() in ["exit", "quit", "bye"]:
-        chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: Goodbye! Have a nice day.\n", "bot")
+        chat_area.insert(tk.END, f" \n[Bot]: Goodbye! Have a nice day.\n", "bot")
         root.after(1000, root.destroy)  # Close the window after 1 second
        
     elif mode == "answer":
         response = get_best_answer(user_input)
-        chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: {response}\n", "bot")
+        chat_area.insert(tk.END, f"\n [Bot]: {response}\n", "bot")
 
     elif mode == "quiz":
         if current_question:
             if user_input.lower() == correct_answer.lower():
-                chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: ✅ Correct!\n", "bot")
+                chat_area.insert(tk.END, f"\n [Bot]: Great it's ✅ Correct!\n", "bot")
+
                 score += 1
             else:
-                chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: ❌ Wrong! The correct answer was: {correct_answer}\n", "bot")
+                chat_area.insert(tk.END, f" \n[Bot]: ❌Oops it's Wrong! The correct answer was: {correct_answer}\n", "bot")
 
             total_questions += 1
-            chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: Score: {score}/{total_questions}\n", "bot")
+            chat_area.insert(tk.END, f" \n[Bot]: Score: {score}/{total_questions}\n", "bot")
             current_question = None
             correct_answer = None
         else:
@@ -89,7 +90,7 @@ def handle_input(event=None):  # Add event argument for Enter key support
             current_question = question_data["question"]
             correct_answer = question_data["correct_answer"]
             options = "\n".join(f"- {opt}" for opt in question_data["options"])
-            chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: {current_question}\nOptions:\n{options}\n", "bot")
+            chat_area.insert(tk.END, f"\n [Bot]: {current_question}\nOptions:\n{options}\n", "bot")
 
     chat_area.yview(tk.END)
 
@@ -107,7 +108,7 @@ def save_chat():
     filename = f"chat_history_{timestamp}.txt"  # Unique filename with timestamp
     with open(filename, "w", encoding="utf-8") as file:
         file.write(chat_area.get("1.0", tk.END))
-    chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: Chat saved as 'chat_history.txt'!\n", "bot")
+    chat_area.insert(tk.END, f"\n [Bot]: Chat saved as 'chat_history_{filename}.txt'!\n", "bot")
 
 # GUI Setup
 root = tk.Tk()
@@ -119,7 +120,7 @@ root.configure(bg="#2C2F33")
 chat_frame = ttk.Frame(root, padding=10)
 chat_frame.pack(pady=10, fill="both", expand=True)
 
-chat_area = scrolledtext.ScrolledText(chat_frame, wrap=tk.WORD, width=70, height=20, bg="#23272A", fg="white", font=("Arial", 12), bd=0, relief=tk.FLAT)
+chat_area = scrolledtext.ScrolledText(chat_frame, wrap=tk.WORD, width=70, height=20, fg="white", font=("Arial", 13), bd=0, relief=tk.FLAT)
 chat_area.pack(padx=5, pady=5, fill="both", expand=True)
 chat_area.insert(tk.END, "[Bot]: Hello! Ask me anything about Python or switch to Quiz Mode.\n", "bot")
 
@@ -127,7 +128,7 @@ chat_area.insert(tk.END, "[Bot]: Hello! Ask me anything about Python or switch t
 input_frame = ttk.Frame(root, padding=10)
 input_frame.pack(fill="x", pady=5)
 
-user_entry = ttk.Entry(input_frame, width=50, font=("Arial", 12))
+user_entry = ttk.Entry(input_frame, width=50, font=("Arial", 13))
 user_entry.pack(side=tk.LEFT, padx=5, pady=5, fill="x", expand=True)
 user_entry.bind("<Return>", handle_input)  # Press Enter to send message
 
@@ -159,8 +160,8 @@ save_button = ttk.Button(mode_frame, text="Save Chat", command=save_chat, style=
 save_button.pack(side=tk.RIGHT, padx=10)
 
 # Chat Text Colors
-chat_area.tag_config("bot", foreground="#7289DA")  # Blue for bot
-chat_area.tag_config("user", foreground="#43B581")  # Green for user
+chat_area.tag_config("bot", background="#1DA1F2", foreground="white", font=("Arial", 12, "bold"))# Blue for bot
+chat_area.tag_config("user", background="#D3D3D3", foreground="black", font=("Arial", 12, "bold"),justify="right") # Green for user
 
 # Run GUI
 root.mainloop()
