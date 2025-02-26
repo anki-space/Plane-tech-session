@@ -8,7 +8,7 @@ from datetime import datetime
 import time
 
 # Load dataset
-with open("data.json", "r", encoding="utf-8") as file:
+with open("Final_project_Python_quiz_and_info_bot\data.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 # Prepare Answer Mode dataset
@@ -64,13 +64,13 @@ def handle_input(event=None):  # Add event argument for Enter key support
     chat_area.insert(tk.END, f"\n[{get_timestamp()}] [You]: {user_input}\n", "user")
     user_entry.delete(0, tk.END)
 
-    if mode == "answer":
-        if user_input.lower() in ["exit", "quit", "bye"]:
-            chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: Goodbye! Have a nice day.\n", "bot")
-            root.after(1000, root.destroy)  # Close the window after 1 second
-        else:
-            response = get_best_answer(user_input)
-            chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: {response}\n", "bot")
+    if user_input.lower() in ["exit", "quit", "bye"]:
+        chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: Goodbye! Have a nice day.\n", "bot")
+        root.after(1000, root.destroy)  # Close the window after 1 second
+       
+    elif mode == "answer":
+        response = get_best_answer(user_input)
+        chat_area.insert(tk.END, f"\n[{get_timestamp()}] [Bot]: {response}\n", "bot")
 
     elif mode == "quiz":
         if current_question:
@@ -93,6 +93,13 @@ def handle_input(event=None):  # Add event argument for Enter key support
 
     chat_area.yview(tk.END)
 
+# Function to clear chat
+def clear_chat():
+    global score,total_questions
+    score = 0
+    total_questions = 0
+    chat_area.delete("1.0", tk.END)
+    chat_area.insert(tk.END, "[Bot]: Chat cleared! You can start again.\n", "bot")
 
 # Function to save chat history
 def save_chat():
@@ -145,6 +152,8 @@ mode_label.pack(side=tk.LEFT, padx=10)
 mode_button = ttk.Button(mode_frame, text="Switch Mode", command=switch_mode, style="Mode.TButton")
 mode_button.pack(side=tk.RIGHT, padx=10)
 
+clear_button = ttk.Button(mode_frame, text="Clear Chat", command=clear_chat, style="TButton")
+clear_button.pack(side=tk.RIGHT, padx=10)
 
 save_button = ttk.Button(mode_frame, text="Save Chat", command=save_chat, style="TButton")
 save_button.pack(side=tk.RIGHT, padx=10)
